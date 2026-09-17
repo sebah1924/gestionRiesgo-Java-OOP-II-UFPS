@@ -9,12 +9,13 @@ package gestionriesgo;
  * @author sebah
  */
 public class Alcalde extends FuncionarioPublico {
+    Municipio municipio;
 
 public Alcalde(String nombre, String documento, int edad,
-               String telefono, String identificacionFuncionario) {
+               String telefono, String identificacionFuncionario, Municipio municipio) {
+    
 
-    super(nombre, documento, edad, telefono,
-          "Alcalde", identificacionFuncionario);
+    super(nombre, documento, edad, telefono,"Alcalde", identificacionFuncionario,municipio);
 }
     public void coordinarEmergencia() {
         // Pendiente
@@ -23,4 +24,7 @@ public Alcalde(String nombre, String documento, int edad,
     public void declararCalamidad() {
         // Pendiente
     }
+    
+    
+    
 }

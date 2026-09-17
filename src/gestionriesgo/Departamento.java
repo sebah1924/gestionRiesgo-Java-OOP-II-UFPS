@@ -8,6 +8,16 @@ package gestionriesgo;
  *
  * @author sebah
  */
-public class Departamento {
+public class Departamento extends EntidadTerritorial {
+    Gobernador gobernador;
+
+    public Departamento(String nombre, String identificacion, double presupuesto, long poblacion,
+            Gobernador gobernador) {
+        super(nombre, identificacion, presupuesto, poblacion, null);
+    }
+
+    public void setGobernador(Gobernador gobernador) {
+        super.setMandatario(gobernador);
+    }
     
 }

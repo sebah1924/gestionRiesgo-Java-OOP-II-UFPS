@@ -11,12 +11,19 @@ package gestionriesgo;
 public abstract class EntidadTerritorial extends Entidad {
 
     protected long poblacion;
+    protected FuncionarioPublico mandatario;
 
     public EntidadTerritorial(String nombre, String identificacion,
-                              double presupuesto, long poblacion) {
+                              double presupuesto, long poblacion,FuncionarioPublico mandatario ) {
 
         super(nombre, identificacion, presupuesto);
-
+ 
         this.poblacion = poblacion;
+        this.mandatario=mandatario;
     }
+     public void setMandatario(FuncionarioPublico mandatario) {
+        this.mandatario = mandatario;
+    }
+    
+    
 }

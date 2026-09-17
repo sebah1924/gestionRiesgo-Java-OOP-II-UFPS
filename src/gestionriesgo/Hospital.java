@@ -11,3 +11,5 @@ package gestionriesgo;
 public class Hospital {
     
 }
+
+

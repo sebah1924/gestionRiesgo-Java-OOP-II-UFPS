@@ -8,6 +8,14 @@ package gestionriesgo;
  *
  * @author sebah
  */
-public class Municipio {
+public class Municipio extends EntidadTerritorial {
+
+    public Municipio(String nombre, String identificacion, double presupuesto, long poblacion, Alcalde alcalde) {
+        super(nombre, identificacion, presupuesto, poblacion, null);
+    }
+    
+    public void setAlcalde(Alcalde a) {
+        super.setMandatario(a);
+    }
     
 }

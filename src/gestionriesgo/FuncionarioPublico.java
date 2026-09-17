@@ -10,19 +10,24 @@ package gestionriesgo;
  */
 public abstract class FuncionarioPublico extends Persona {
 
-
+protected Entidad entidad;
 protected String cargo;
 protected String identificacionFuncionario;
 
 public FuncionarioPublico(String nombre, String documento, int edad,
                           String telefono, String cargo,
-                          String identificacionFuncionario) {
+                          String identificacionFuncionario, Entidad entidad) {
 
     super(nombre, documento, edad, telefono);
 
     this.cargo = cargo;
     this.identificacionFuncionario = identificacionFuncionario;
+    this.entidad=entidad;
+    
 }
+
+
+
 
 
 }
