@@ -9,5 +9,13 @@ package gestionriesgo;
  * @author sebah
  */
 public class Infraestructura {
-    
+    protected String Direccion;
+   protected EstadoInfraestructura  estado;
+
+    public Infraestructura(String Direccion, EstadoInfraestructura estado) {
+        this.Direccion = Direccion;
+        this.estado = estado;
+    }
+   
+   
 }

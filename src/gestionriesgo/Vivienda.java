@@ -8,6 +8,17 @@ package gestionriesgo;
  *
  * @author sebah
  */
-public class Vivienda {
+public class Vivienda extends Edificacion  {
+   int habitantes;
+
+    public Vivienda(int habitantes, int numeroPisos, int anioConstruccion, boolean cumpleNSR10, String direccion, EstadoInfraestructura estado) {
+        super(numeroPisos, anioConstruccion, cumpleNSR10, direccion, estado);
+        this.habitantes = habitantes;
+    }
+   
+           
+    
+    
+    
     
 }
