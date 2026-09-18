@@ -20,4 +20,5 @@ public class Departamento extends EntidadTerritorial {
         super.setMandatario(gobernador);
     }
     
+    
 }

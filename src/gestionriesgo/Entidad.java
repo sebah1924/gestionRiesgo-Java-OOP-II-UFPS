@@ -19,4 +19,19 @@ public abstract class Entidad {
         this.identificacion = identificacion;
         this.presupuesto = presupuesto;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getIdentificacion() {
+        return identificacion;
+    }
+
+    public double getPresupuesto() {
+        return presupuesto;
+    }
+    
+    
+    
 }

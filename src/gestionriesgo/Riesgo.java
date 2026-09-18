@@ -9,5 +9,16 @@ package gestionriesgo;
  * @author sebah
  */
 public class Riesgo {
-    
+
+    int nivelProbabilidad;
+    int impacto;
+
+    public Riesgo(int nivelProbabilidad, int impacto) {
+        this.nivelProbabilidad = nivelProbabilidad;
+        this.impacto = impacto;
+    }
+
+    public int calcularNivelRiesgo() {
+        return nivelProbabilidad * impacto;
+    }
 }

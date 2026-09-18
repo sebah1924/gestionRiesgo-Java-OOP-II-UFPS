@@ -24,6 +24,15 @@ public abstract class EntidadTerritorial extends Entidad {
      public void setMandatario(FuncionarioPublico mandatario) {
         this.mandatario = mandatario;
     }
+
+    public long getPoblacion() {
+        return poblacion;
+    }
+
+    public FuncionarioPublico getMandatario() {
+        return mandatario;
+    }
     
+     
     
 }
