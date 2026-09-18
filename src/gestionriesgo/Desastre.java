@@ -1,15 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package gestionriesgo;
 
 import java.time.LocalDate;
 
-/**
- *
- * @author sebah
- */
 public class Desastre {
     TipoDesastre tipo;
     boolean emergenciaActiva;
@@ -24,14 +17,17 @@ public class Desastre {
         
     }
      
-   @Override
+@Override
 public String toString() {
     String estado = emergenciaActiva ? "activa" : "inactiva";
-    
-    return "La emergencia en " + getMunicipio().getNombre() + ", " + getDepartamento().getNombre()
-         + " del " + getFecha() + " ha dejado " + getNumeroVictimas() + " víctimas. Actualmente se encuentra " + estado + ".";
-}
 
+    return "Desastre de tipo " + getTipo()
+         + " en " + getMunicipio().getNombre()
+         + ", " + getDepartamento().getNombre()
+         + " del " + getFecha()
+         + " ha dejado " + getNumeroVictimas()
+         + " víctimas. Actualmente se encuentra " + estado + ".";
+}
     public TipoDesastre getTipo() {
         return tipo;
     }
